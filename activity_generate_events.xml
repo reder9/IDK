@@ -10,18 +10,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="\nPut Title Here!"
+        android:text="\nName of Event here!"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="The random event generator for all your needs!"
+        android:text="Results here!!"
         android:id="@+id/textView2"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
@@ -32,7 +33,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start App"
+        android:text="Go To Stuff"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/textView"
