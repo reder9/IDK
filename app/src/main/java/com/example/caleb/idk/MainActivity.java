@@ -2,6 +2,7 @@ package com.example.caleb.idk;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.location.Location;
 import android.location.LocationManager;
 import android.support.v7.app.AppCompatActivity;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     public void getRange(View view) {
 
         Intent intent = new Intent(this, SelectRange.class);
-        startActivity(intent);
+         startActivity(intent);
 
     }
 

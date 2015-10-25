@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="\nSelect your mile range!"
-        android:id="@+id/textView"
+        android:text="Please enter your preferred search and price range:"
+        android:id="@+id/name"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
@@ -21,13 +21,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Results"
+        android:text="Find sites!"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
         android:background="#ffa007"
         android:onClick="getResults" />
 
@@ -87,4 +87,4 @@
         android:textSize="25sp" />
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Caleb/AndroidStudioProjects/IDK/app/src/main/res/layout/activity_select_range.xml -->
+<!-- From: file:/C:/Users/Caleb/Desktop/MINNEHACK/Mach%203/app/src/main/res/layout/activity_select_range.xml -->

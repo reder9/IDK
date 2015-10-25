@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="IDK"
-        android:id="@+id/textView"
+        android:id="@+id/name"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
@@ -37,11 +37,11 @@
         android:text="Start App"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
         android:background="#ffa007"
         android:onClick="getRange" />
 </RelativeLayout>
-<!-- From: file:/C:/Users/Caleb/AndroidStudioProjects/IDK/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/Users/Caleb/Desktop/MINNEHACK/Mach%203/app/src/main/res/layout/activity_main.xml -->
