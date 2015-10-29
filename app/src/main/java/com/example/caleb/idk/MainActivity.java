@@ -18,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final TextView test=(TextView) findViewById(R.id.test);
+         GPSTracker gps = new GPSTracker(MainActivity.this);
+
+        if (gps.canGetLocation()){
+           test.setText("Long: " + gps.getLongitude() + "    LAT: " + gps.getLatitude());
+        }
     }
 
     @Override
