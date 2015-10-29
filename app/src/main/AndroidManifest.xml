@@ -32,6 +32,18 @@
             android:name=".Results"
             android:label="@string/title_activity_results" >
         </activity>
+        <activity
+            android:name=".UserPreferences"
+            android:label="@string/title_activity_user_preferences" >
+        </activity>
+        <activity
+            android:name=".UsersPreferences"
+            android:label="@string/title_activity_users_preferences" >
+        </activity>
+        <activity
+            android:name=".TypeSelection"
+            android:label="@string/title_activity_type_selection" >
+        </activity>
     </application>
 
 </manifest>

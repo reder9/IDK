@@ -116,15 +116,15 @@ public class GenerateEvents extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                       inJson = response;
+                        inJson = response;
 
                         Context context = getApplicationContext();
 
-                        int duration = Toast.LENGTH_SHORT;
+                         int duration = Toast.LENGTH_SHORT;
 
-                        //Toast toast = Toast.makeText(context, inJson, duration);
+                        Toast a = Toast.makeText(context, inJson, duration);
+                        a.show();
 
-                        //toast.show();
                         fix();
 
 
@@ -137,14 +137,6 @@ public class GenerateEvents extends AppCompatActivity {
             }
         });
 
-  //      Context context = getApplicationContext();
-
-//        int duration = Toast.LENGTH_SHORT;
-
-       // Toast a = Toast.makeText(context, stringRequest.toString(), duration);
-        //toast.show();
-
-// Add the request to the RequestQueue.
         queue.add(stringRequest);
 
         Intent intent = new Intent(this, Results.class);
@@ -154,9 +146,9 @@ public class GenerateEvents extends AppCompatActivity {
 
     public void fix(){
 
-    //    Context context = getApplicationContext();
+        //    Context context = getApplicationContext();
 
-  //
+        //
 
         try {
 
@@ -171,13 +163,7 @@ public class GenerateEvents extends AppCompatActivity {
 
             JSONArray value = arr.getJSONArray(rand);
 
-            Context context = getApplicationContext();
-            int duration = Toast.LENGTH_SHORT;
-
-            Toast toast = Toast.makeText(context, arr.toString(), duration);
-            toast.show();
-
-           JSONObject n = new JSONObject("name");
+            JSONObject n = new JSONObject("name");
             //SONObject price= new JSONObject("price");
             //JSONObject  rate= new JSONObject("name");
 

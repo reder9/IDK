@@ -67,9 +67,9 @@ public class SelectRange extends AppCompatActivity {
         final SeekBar sk2 = (SeekBar) findViewById(R.id.seekBar2);
         sharedPref = this.getSharedPreferences(PREFS_NAME, 0);
         editor = sharedPref.edit();
-        sk2.setProgress( sharedPref.getInt("Money",1));
+        sk2.setProgress( sharedPref.getInt("Money",1)*10) ;
         String b = "";
-        n = sk2.getProgress();
+        n = sk2.getProgress()/10;
         for (int i = 0; i <= n; i++) {
             b += "$";
         }
@@ -90,8 +90,8 @@ public class SelectRange extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 // TODO Auto-generated method stub
                 String a = "";
-                n = sk2.getProgress();
-                for (int i = 0; i <= sk2.getProgress(); i++) {
+                n = sk2.getProgress()/10;
+                for (int i = 0; i <= n; i++) {
                     a += "$";
                 }
 
@@ -103,12 +103,6 @@ public class SelectRange extends AppCompatActivity {
             }
         });
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
     }
 
     @Override

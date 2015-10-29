@@ -16,4 +16,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_example">Example action</string>
+    <string name="title_activity_user_preferences">UserPreferences</string>
+    <string name="title_activity_users_preferences">UsersPreferences</string>
+    <string name="title_activity_type_selection">TypeSelection</string>
 </resources>
